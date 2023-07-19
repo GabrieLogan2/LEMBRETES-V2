@@ -1,0 +1,106 @@
+/* Define a fonte utilizada em todo o documento */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Define o estilo do cabeçalho */
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  
+  /* Define o estilo dos lembretes */
+  #lembretes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .lembrete {
+    width: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+  }
+  
+  .lembrete:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .lembrete h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .lembrete p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .like-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .like-button {
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .like-count {
+    font-size: 16px;
+    color: #666;
+  }
+  
